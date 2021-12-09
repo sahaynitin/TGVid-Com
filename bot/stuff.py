@@ -18,7 +18,7 @@ async def up(event):
 
 async def start(event):
     await event.reply(
-        f"Hi `{ok.user.first_name}`\n\nThis is A CompressorBot Which Can Encode Videos.\n\nReduce Size of Videos With Negligible Quality Change\n\nU can Generate Samples/screenshots too.",
+        f"Hi `{event.sender.first_name}`\n\nThis is A CompressorBot Which Can Encode Videos.\n\nReduce Size of Videos With Negligible Quality Change\n\nU can Generate Samples/screenshots too.",
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
