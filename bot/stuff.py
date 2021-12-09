@@ -18,9 +18,13 @@ async def up(event):
 
 async def start(event):
     await event.reply(
-        f"**Send me the video which you want to compress.**\n**Uptime: {str(datetime.now() - START_TIME).split('.')[0]}**",
+        f"Hi `{ok.user.first_name}`\n\nThis is A CompressorBot Which Can Encode Videos.\n\nReduce Size of Videos With Negligible Quality Change\n\nU can Generate Samples/screenshots too.",
         buttons=[
-            [Button.inline("HELP", data="help")],
+            [Button.inline("HELP", data="ihelp")],
+            [
+                Button.url("Update Channel", url="t.me/tellybots_4u"),
+                Button.url("Support Group", url="t.me/tellybots_support"),
+            ],
         ],
     )
 
@@ -35,15 +39,11 @@ async def zylern(event):
 /getcode - __Print Current FFMPEG Code__
 /logs - __Get Bot Logs__
 /ping - __Check Ping__
-/sysinfo - __Get System Info__
 /leech - __Leech Links And Compress Video__
 /renew - __Clear Cached Downloads__
 /clear - __Clear Queued Files__
 /showthumb - __Show Current Thumbnail__
 /speed - __Do A SpeedTest__
-/eval - __Execute An Argument__
-/bash - __Run Bash Commands__
-/cmds - __List Available Commands__
 """
     )
 
